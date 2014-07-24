@@ -1,4 +1,3 @@
-boilerplate
-===========
+# Boilerplate
 
-Adaptação do HTML5 Boilerplate para facilitar o início de novos projetos.
+> Adaptação do HTML5 Boilerplate para novos projetos.
