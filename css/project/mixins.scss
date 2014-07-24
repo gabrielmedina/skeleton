@@ -1,0 +1,86 @@
+/*
+	Mixins SASS
+*/
+
+// Apparence
+@mixin appearance($appearance){
+	-webkit-appearance: $appearance;
+	   -moz-appearance: $appearance;
+	        appearance: $appearance;
+}
+
+// Background Gradient
+@mixin bg-gradient($top, $bot){
+	background: $top;
+	
+  background: -webkit-linear-gradient(top, $top, $bot);
+ 	background:    -moz-linear-gradient(top, $top, $bot);
+  background:     -ms-linear-gradient(top, $top, $bot);
+  background:      -o-linear-gradient(top, $top, $bot);
+}
+
+// Border Radius
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+
+// Box Shadow
+@mixin box-shadow($shadow){
+	-webkit-box-shadow: $shadow;
+	   -moz-box-shadow: $shadow;
+	        box-shadow: $shadow;
+}
+
+
+// Box Sizing
+@mixin box-sizing($boxmodel){
+	-webkit-box-sizing: $boxmodel;
+	   -moz-box-sizing: $boxmodel;
+	        box-sizing: $boxmodel;
+}
+
+
+// Filter
+@mixin filter($filter){
+	-webkit-filter: $filter;
+	        filter: $filter;
+}
+
+
+// Opacity
+@mixin opacity($opacity){
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity*100));
+}
+
+
+// Transitions
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+	     -o-transition: $transition;
+	        transition: $transition;
+}
+
+
+// Transform
+@mixin transform($transform){
+	-webkit-transform: $transform;
+	   -moz-transform: $transform;
+	    -ms-transform: $transform;
+	     -o-transform: $transform;
+	        transform: $transform;
+}
+
+
+// Text Shadow
+@mixin text-shadow($shadow){
+	-webkit-text-shadow: $shadow;
+	   -moz-text-shadow: $shadow;
+	    -ms-text-shadow: $shadow;
+	     -o-text-shadow: $shadow;
+	        text-shadow: $shadow;
+}

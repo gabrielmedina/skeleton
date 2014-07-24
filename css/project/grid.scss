@@ -1,0 +1,49 @@
+/*
+	Grid
+*/
+
+.grid {
+	@extend .clearfix;
+	@include box-sizing(border-box);
+
+	width: 960px;
+	margin: 0 auto;
+}
+
+.grid-relative {
+	@extend .grid;
+	position: relative;
+}
+
+
+.row {
+	@extend .clearfix;
+	@include box-sizing(border-box);
+	
+	width: 100%;
+}
+
+
+$col-qtd: 12;
+$col-width: 100% / $col-qtd;
+
+@for $i from 1 through $col-qtd {
+	.col-#{$i} {
+		@include box-sizing(border-box);
+		width: $col-width * $i;
+	}
+}
+
+
+.col-left {
+	float: left;
+}
+
+.col-right {
+	float: right;
+}
+
+.col-center {
+	float: none;
+	margin: 0 auto;
+}
