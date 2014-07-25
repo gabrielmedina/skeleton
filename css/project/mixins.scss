@@ -57,6 +57,15 @@
 }
 
 
+// Placeholder
+@mixin placeholder($color){	
+	:-moz-placeholder { color: $color; }
+	::-moz-placeholder { color: $color;	}
+	:-ms-input-placeholder { color: $color; }
+	::-webkit-input-placeholder { color: $color; }
+}
+
+
 // Transitions
 @mixin transition($transition){
 	-webkit-transition: $transition;
