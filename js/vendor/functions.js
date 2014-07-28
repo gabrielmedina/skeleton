@@ -3,13 +3,13 @@
 */
 
 // Active
-function nav_active(){
+function active(){
   var url = $(location).attr('href').split('/').pop();
 
   if (url == ''){
     $('.nav-index').addClass('active');
   } else {
-    $('.nav-active a').each(function(){
+    $('.nav a').each(function(){
       var link = $(this).attr('href');
 
       if(link == url){
@@ -19,7 +19,40 @@ function nav_active(){
   }
 }
 
-// Up
+// First Last
+function first_last(elements){
+  var elements = $('.first-last ' + elements);
+
+  elements.each(function(i){
+    switch(i){
+      case 0:
+        $(this).addClass('first');
+        break;
+      case elements.length - 1:
+        $(this).addClass('last'); 
+        break;
+    }
+  });
+}
+
+// Even Odd
+function even_odd(elements){
+  var elements = $('.even-odd ' + elements);
+
+  elements.each(function(i){
+    var c = i % 2;
+
+    if(c == 0){
+      $(this).addClass('odd');
+    } else {
+      $(this).addClass('even');
+    }
+
+    console.log(c);
+  });
+}
+
+// Page Up
 function page_up(){
   var page_up = $('#page_up');
 
@@ -38,7 +71,7 @@ function page_up(){
   });
 }
 
-// Back
+// Page Back
 function page_back(){
   var page_back = $('.page_back');
   
