@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  // nav_active();
+  // active();
+  // first_last('elements');
+  // even_odd('elements');
   // page_up();
   // page_back();
 });
