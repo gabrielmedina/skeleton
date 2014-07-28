@@ -3,47 +3,47 @@
 */
 
 // Active
-function active(){
+function nav_active(){
   var url = $(location).attr('href').split('/').pop();
 
   if (url == ''){
-    $('.nav-active a[href="./"]').addClass('active');
+    $('.nav-index').addClass('active');
   } else {
-    $('nav-active a').each(function(){
+    $('.nav-active a').each(function(){
       var link = $(this).attr('href');
 
       if(link == url){
         $(this).addClass('active');
       }
-    })
+    });
   }
 }
 
 // Up
-function up(){
-  var up = $('#up');
+function page_up(){
+  var page_up = $('#page_up');
 
-  up.attr('href', 'javascript:void();');
+  page_up.attr('href', 'javascript:void();');
 
-  up.on('click', function(){
+  page_up.on('click', function(){
     $('html, body').stop().animate({ scrollTop: 0 }, 400 )
   });
 
   $(window).scroll(function(){
     if($(this).scrollTop() > 100){
-      up.fadeIn();
+      page_up.fadeIn();
     } else {
-      up.fadeOut();
+      page_up.fadeOut();
     }
   });
 }
 
 // Back
-function go_back(){
-  var go_back = $('.go-back');
+function page_back(){
+  var page_back = $('.page_back');
   
-  if(go_back.length){
-    go_back
+  if(page_back.length){
+    page_back
       .attr('href', 'javascript:void();')
       .on('click', function(){ 
         history.go(-1); 
