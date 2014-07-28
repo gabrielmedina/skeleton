@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  // active();
-  // up();
-  // go_back();
+  // nav_active();
+  // page_up();
+  // page_back();
 });
