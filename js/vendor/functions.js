@@ -40,15 +40,11 @@ function even_odd(elements){
   var elements = $('.even-odd ' + elements);
 
   elements.each(function(i){
-    var c = i % 2;
-
-    if(c == 0){
+    if((i % 2) == 0){
       $(this).addClass('odd');
     } else {
       $(this).addClass('even');
     }
-
-    console.log(c);
   });
 }
 
