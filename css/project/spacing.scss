@@ -1,0 +1,137 @@
+/*
+	Spacing
+*/
+
+/* Margins */
+
+$margin: 20px;
+
+.margin {
+	margin: 0 $margin/2;
+}
+
+.margin-top {
+	margin-top: $margin;
+}
+
+.margin-bottom {
+	margin-bottom: $margin;
+}
+
+.margin-left {
+	margin-left: $margin;
+}
+
+.margin-right {
+	margin-right: $margin;
+}
+
+
+.main-small {
+	margin: 0 $margin/4;
+}
+
+.margin-small-top {
+	margin-top: $margin/2;
+}
+
+.margin-small-bottom {
+	margin-bottom: $margin/2;
+}
+
+.margin-small-left {
+	margin-left: $margin/2;
+}
+
+.margin-small-right {
+	margin-right: $margin/2;
+}
+
+
+.margin-large {
+	margin: 0 $margin;
+}
+
+.margin-large-top {
+	margin-top: $margin*2;
+}
+
+.margin-large-bottom {
+	margin-bottom: $margin*2;
+}
+
+.margin-large-left {
+	margin-left: $margin*2;
+}
+
+.margin-large-right {
+	margin-right: $margin*2;
+}
+
+
+
+/* Paddings */
+
+$padding: 20px;
+
+.padding {
+	padding: 0 $padding/2;
+}
+
+.padding-top {
+	padding-top: $padding;
+}
+
+.padding-bottom {
+	padding-bottom: $padding;
+}
+
+.padding-left {
+	padding-left: $padding;
+}
+
+.padding-right {
+	padding-right: $padding;
+}
+
+
+.padding-small {
+	padding: 0 $padding/4;
+}
+
+.padding-small-top {
+	padding-top: $padding/2;
+}
+
+.padding-small-bottom {
+	padding-bottom: $padding/2;
+}
+
+.padding-small-left {
+	padding-left: $padding/2;
+}
+
+.padding-small-right {
+	padding-right: $padding/2;
+}
+
+
+.padding-large {
+	padding: 0 $padding;
+}
+
+.padding-small-top {
+	padding-top: $padding*2;
+}
+
+.padding-small-bottom {
+	padding-bottom: $padding*2;
+}
+
+.padding-small-left {
+	padding-left: $padding*2;
+}
+
+.padding-small-right {
+	padding-right: $padding*2;
+}
