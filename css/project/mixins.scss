@@ -1,15 +1,13 @@
-/*
-	Mixins SASS
-*/
+// mixins
 
-// Apparence
+// apparence
 @mixin appearance($appearance){
 	-webkit-appearance: $appearance;
 	   -moz-appearance: $appearance;
 	        appearance: $appearance;
 }
 
-// Background Gradient
+// background gradient
 @mixin bg-gradient($top, $bot){
 	background: $top;
 	
@@ -19,7 +17,7 @@
   background:      -o-linear-gradient(top, $top, $bot);
 }
 
-// Border Radius
+// border radius
 @mixin border-radius($radius){
 	-webkit-border-radius: $radius;
 	   -moz-border-radius: $radius;
@@ -27,7 +25,7 @@
 }
 
 
-// Box Shadow
+// box shadow
 @mixin box-shadow($shadow){
 	-webkit-box-shadow: $shadow;
 	   -moz-box-shadow: $shadow;
@@ -35,7 +33,7 @@
 }
 
 
-// Box Sizing
+// box sizing
 @mixin box-sizing($boxmodel){
 	-webkit-box-sizing: $boxmodel;
 	   -moz-box-sizing: $boxmodel;
@@ -43,21 +41,21 @@
 }
 
 
-// Filter
+// filter
 @mixin filter($filter){
 	-webkit-filter: $filter;
 	        filter: $filter;
 }
 
 
-// Opacity
+// opacity
 @mixin opacity($opacity){
 	opacity: $opacity;
 	filter: alpha(opacity=($opacity*100));
 }
 
 
-// Placeholder
+// placeholder
 @mixin placeholder($color){	
 	:-moz-placeholder { color: $color; }
 	::-moz-placeholder { color: $color;	}
@@ -66,7 +64,7 @@
 }
 
 
-// Transitions
+// transitions
 @mixin transition($transition){
 	-webkit-transition: $transition;
 	   -moz-transition: $transition;
@@ -75,7 +73,7 @@
 }
 
 
-// Transform
+// transform
 @mixin transform($transform){
 	-webkit-transform: $transform;
 	   -moz-transform: $transform;
@@ -85,7 +83,7 @@
 }
 
 
-// Text Shadow
+// text shadow
 @mixin text-shadow($shadow){
 	-webkit-text-shadow: $shadow;
 	   -moz-text-shadow: $shadow;

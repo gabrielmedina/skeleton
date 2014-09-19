@@ -1,27 +1,19 @@
-/*
-  Functions
-*/
+// Functions
 
 // Active
-function active(){
-  var url = $(location).attr('href').split('/').pop();
+function active(base){
+  var url = $(location).attr('href').replace(base, '');
 
-  if (url == ''){
-    $('.nav-index').addClass('active');
+  if(url == ''){
+    $('a[href="/"]').addClass('active');
   } else {
-    $('.nav a').each(function(){
-      var link = $(this).attr('href');
-
-      if(link == url){
-        $(this).addClass('active');
-      }
-    });
+    $('a[href="'+ url[0] + '"').addClass('active');
   }
-}
+};
 
 // First Last
 function first_last(elements){
-  var elements = $('.first-last ' + elements);
+  var elements = $(elements);
 
   elements.each(function(i){
     switch(i){
@@ -33,49 +25,51 @@ function first_last(elements){
         break;
     }
   });
-}
+};
 
 // Even Odd
 function even_odd(elements){
-  var elements = $('.even-odd ' + elements);
-
-  elements.each(function(i){
-    if((i % 2) == 0){
+  $(elements).each(function(index){
+    if((index % 2) == 0){
       $(this).addClass('odd');
     } else {
       $(this).addClass('even');
     }
   });
-}
+};
 
-// Page Up
-function page_up(){
-  var page_up = $('#page_up');
+// Up
+function up(){
+  var up = $('#up');
 
-  page_up.attr('href', 'javascript:void();');
-
-  page_up.on('click', function(){
-    $('html, body').stop().animate({ scrollTop: 0 }, 400 )
-  });
+  up
+    .attr('href', 'javascript:void();')
+    .on('click', function(){
+      $('html, body')
+        .stop()
+        .animate({ 
+          scrollTop: 0 
+        },400);
+    });
 
   $(window).scroll(function(){
     if($(this).scrollTop() > 100){
-      page_up.fadeIn();
+      up.fadeIn();
     } else {
-      page_up.fadeOut();
+      up.fadeOut();
     }
   });
-}
+};
 
-// Page Back
-function page_back(){
-  var page_back = $('.page_back');
-  
-  if(page_back.length){
-    page_back
+// Go Back
+function goback(){
+  var goback = $('.goback');
+
+  goback.each(function(){
+    $(this)
       .attr('href', 'javascript:void();')
-      .on('click', function(){ 
-        history.go(-1); 
+      .on('click', function(){
+        history.go(-1);
       });
-  }
-}
+  });
+};
