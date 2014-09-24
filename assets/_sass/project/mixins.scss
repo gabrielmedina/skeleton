@@ -1,0 +1,93 @@
+// mixins
+
+// apparence
+@mixin appearance($appearance){
+	-webkit-appearance: $appearance;
+	   -moz-appearance: $appearance;
+	        appearance: $appearance;
+}
+
+// background gradient
+@mixin bg-gradient($top, $bot){
+	background: $top;
+	
+  background: -webkit-linear-gradient(top, $top, $bot);
+ 	background:    -moz-linear-gradient(top, $top, $bot);
+  background:     -ms-linear-gradient(top, $top, $bot);
+  background:      -o-linear-gradient(top, $top, $bot);
+}
+
+// border radius
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+
+// box shadow
+@mixin box-shadow($shadow){
+	-webkit-box-shadow: $shadow;
+	   -moz-box-shadow: $shadow;
+	        box-shadow: $shadow;
+}
+
+
+// box sizing
+@mixin box-sizing($boxmodel){
+	-webkit-box-sizing: $boxmodel;
+	   -moz-box-sizing: $boxmodel;
+	        box-sizing: $boxmodel;
+}
+
+
+// filter
+@mixin filter($filter){
+	-webkit-filter: $filter;
+	        filter: $filter;
+}
+
+
+// opacity
+@mixin opacity($opacity){
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity*100));
+}
+
+
+// placeholder
+@mixin placeholder($color){	
+	:-moz-placeholder { color: $color; }
+	::-moz-placeholder { color: $color;	}
+	:-ms-input-placeholder { color: $color; }
+	::-webkit-input-placeholder { color: $color; }
+}
+
+
+// transitions
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	   -moz-transition: $transition;
+	     -o-transition: $transition;
+	        transition: $transition;
+}
+
+
+// transform
+@mixin transform($transform){
+	-webkit-transform: $transform;
+	   -moz-transform: $transform;
+	    -ms-transform: $transform;
+	     -o-transform: $transform;
+	        transform: $transform;
+}
+
+
+// text shadow
+@mixin text-shadow($shadow){
+	-webkit-text-shadow: $shadow;
+	   -moz-text-shadow: $shadow;
+	    -ms-text-shadow: $shadow;
+	     -o-text-shadow: $shadow;
+	        text-shadow: $shadow;
+}
