@@ -14,7 +14,7 @@ module.exports = function(grunt) {
               'assets/_js/vendor/jquery.min.js',
               'assets/_js/vendor/functions.js',
               'assets/_js/vendor/plugins.js',
-              'assets/_js/vendor/main.js'
+              'assets/_js/main.js'
             ]
         }
       }
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         	style: 'compressed' 
         },
         files: {
-          'assets/css/style.css': 'assets/_sass/style.scss'
+          'assets/css/style.css': 'assets/_css/style.scss'
         }
       }
     }, // sass
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       dist: {
         files: [
           'assets/_js/**/*',
-          'assets/_sass/**/*'
+          'assets/_css/**/*'
         ],
 
         tasks: ['uglify', 'sass']

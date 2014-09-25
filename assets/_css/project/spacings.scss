@@ -24,7 +24,7 @@ $margin: 20px;
 }
 
 
-.main-small {
+.margin-small {
 	margin: 0 $margin/4;
 }
 
@@ -116,18 +116,18 @@ $padding: 20px;
 	padding: 0 $padding;
 }
 
-.padding-small-top {
+.padding-large-top {
 	padding-top: $padding*2;
 }
 
-.padding-small-bottom {
+.padding-large-bottom {
 	padding-bottom: $padding*2;
 }
 
-.padding-small-left {
+.padding-large-left {
 	padding-left: $padding*2;
 }
 
-.padding-small-right {
+.padding-large-right {
 	padding-right: $padding*2;
 }

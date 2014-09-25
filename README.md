@@ -2,14 +2,14 @@
 
 > HTML5 Boilerplate adaptado para trabalhar com Sass e GruntJS.
 
-### Você vai precisar
+### Usa
 
 - Node.js
 - NPM
 - Ruby
 - Sass
 
-### Como utilizar
+### Colocar pra rodar
 
 Baixe os modulos
 
