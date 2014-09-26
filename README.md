@@ -9,19 +9,19 @@
 
 ### Como utilizar
 
-Baixando as dependências do NPM
+Baixe as dependências do NPM
 
 ```shell
 npm install
 ```
 
-Baixando as dependências do Bower
+Baixe as dependências do Bower
 
 ```shell
 bower install
 ```
 
-Ativando o Grunt
+Ative o Grunt
 
 ```shell
 grunt w
