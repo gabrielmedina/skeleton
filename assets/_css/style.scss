@@ -17,3 +17,61 @@
 @import "project/pages";
 
 @import "vendor/boilerplate-end";
+
+
+
+
+// Breakpoints
+// Smartphones
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+// Smartphones
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+}
+
+// Smartphones (portrait)
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads e alguns outros tablets (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+// iPads e alguns outros tablets (portrait)
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+// Desktops e laptops
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+
+// Telas maiores
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
