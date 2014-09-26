@@ -8,14 +8,17 @@ module.exports = function(grunt){
 
       target: {
         files: {
+          'assets/js/modernizr.js': 
+          [ 
+            'assets/bower/modernizr/modernizr.js'
+          ],
+
           'assets/js/main.js':
-            [
-              'assets/_js/vendor/modernizr.min.js',
-              'assets/bower/jquery/dist/jquery.min.js',
-              'assets/_js/vendor/functions.js',
-              'assets/_js/vendor/plugins.js',
-              'assets/_js/main.js'
-            ]
+          [
+            'assets/bower/jquery/dist/jquery.js',
+            'assets/_js/functions.js',
+            'assets/_js/main.js'
+          ]
         }
       }
     }, // uglify

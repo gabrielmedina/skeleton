@@ -1,57 +1,63 @@
-<!-- Tirado do h5bp com algumas alterações-->
 <!doctype html>
 <html class="no-js" lang="pt-br">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Página não encontrada</title>
 
     <meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="img/icon.png">
-	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-        p {
-            margin: 0 auto;
-            width: 280px;
+      html {
+        color: #888;
+        display: table;
+        font-family: sans-serif;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+      }
+      
+      body {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 2em auto;
+      }
+
+      h1 {
+        color: #555;
+        font-size: 2em;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 280px;
+      }
+
+      @media only screen and (max-width: 280px) {
+        body, p {
+          width: 95%;
         }
 
-        @media only screen and (max-width: 280px) {
-            body, p {
-                width: 95%;
-            }
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
+        h1 {
+          font-size: 1.5em;
+          margin: 0 0 0.3em;
         }
+      }
     </style>
-</head>
-<body>
+
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
     <h1>Página não encontrada</h1>
     <p>Desculpe, a página que você procura não existe.</p>
 
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
