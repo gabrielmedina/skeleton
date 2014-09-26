@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function(grunt){
 
   grunt.initConfig({
     uglify: {
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           'assets/js/main.js': 
             [
               'assets/_js/vendor/modernizr.min.js',
-              'assets/_js/vendor/jquery.min.js',
+              'assets/_js/vendor/jquery/dist/jquery.min.js',
               'assets/_js/vendor/functions.js',
               'assets/_js/vendor/plugins.js',
               'assets/_js/main.js'

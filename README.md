@@ -1,20 +1,20 @@
 # Boilerplate
 
-> HTML5 Boilerplate adaptado para trabalhar com Sass e GruntJS.
+> HTML5 Boilerplate adaptado para trabalhar com Bower e Grunt.
 
-### Usa
+### Linguagens
 
-- Node.js
-- NPM
-- Ruby
-- Sass
+- Node: NPM, Grunt e Bower
+- Ruby: Sass
 
-### Colocar pra rodar
-
-Baixe os modulos
+### Comandos
 
 ```shell
 npm install
+```
+
+```shell
+bower install
 ```
 
 Seja feliz
