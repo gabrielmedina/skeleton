@@ -7,17 +7,21 @@
 - Node: NPM, Grunt e Bower
 - Ruby: Sass
 
-### Comandos
+### Como utilizar
+
+Baixando as dependências do NPM
 
 ```shell
 npm install
 ```
 
+Baixando as dependências do Bower
+
 ```shell
 bower install
 ```
 
-Seja feliz
+Ativando o Grunt
 
 ```shell
 grunt w
