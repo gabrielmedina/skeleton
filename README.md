@@ -2,6 +2,8 @@
 
 > HTML5 Boilerplate adaptado para trabalhar com Bower e Grunt.
 
+![image](http://yellowpencil.com/sites/default/files/blog_images/blog-banner-gruntbower_0.jpg)
+
 ### Linguagens
 
 - Node: NPM, Grunt e Bower
