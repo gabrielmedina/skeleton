@@ -26,7 +26,7 @@ module.exports = function(grunt){
     sass: {
       dist: {
         options: {
-        	style: 'compressed'
+          style: 'compressed'
         },
         files: {
           'assets/css/style.css': 'assets/_css/style.scss'
@@ -34,23 +34,15 @@ module.exports = function(grunt){
       }
     }, // sass
 
-  	watch: {
+    watch: {
       sass: {
-        // We watch and compile sass files as normal but don't live reload here
         files: ['assets/_css/*.sass'],
         tasks: ['sass'],
       },
-      livereload: {
-        // Aqui você aponta os arquivos que quer que sejam atualizados quando uma alteração for feita
-        // A porta padrão é 35729
-        // Para evitar conflitos vou usar a 1337
-        options: { livereload: 1337 },
-        files: ['assets/_css/*'],
-      },
       dist: {
         files: [
-          'assets/_js/**/*',
-          'assets/_css/**/*'
+        'assets/_js/**/*',
+        'assets/_css/**/*'
         ],
 
         tasks: ['uglify', 'sass']
