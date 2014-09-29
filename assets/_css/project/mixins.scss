@@ -8,13 +8,13 @@
 }
 
 // background gradient
-@mixin bg-gradient($top, $bot){
+@mixin background-gradient($top, $bot){
 	background: $top;
 	
-  background: -webkit-linear-gradient(top, $top, $bot);
- 	background:    -moz-linear-gradient(top, $top, $bot);
-  background:     -ms-linear-gradient(top, $top, $bot);
-  background:      -o-linear-gradient(top, $top, $bot);
+	background: -webkit-linear-gradient(top, $top, $bot);
+	background:    -moz-linear-gradient(top, $top, $bot);
+	background:     -ms-linear-gradient(top, $top, $bot);
+	background:      -o-linear-gradient(top, $top, $bot);
 }
 
 // border radius
