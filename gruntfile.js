@@ -8,16 +8,16 @@ module.exports = function(grunt){
 
       target: {
         files: {
-          'assets/js/modernizr.js': 
-          [ 
+          'public/js/modernizr.js':
+          [
             'assets/bower/modernizr/modernizr.js'
           ],
 
-          'assets/js/main.js':
+          'public/js/main.js':
           [
             'assets/bower/jquery/dist/jquery.js',
-            'assets/_js/functions.js',
-            'assets/_js/main.js'
+            'assets/js/functions.js',
+            'assets/js/main.js'
           ]
         }
       }
@@ -29,20 +29,20 @@ module.exports = function(grunt){
           style: 'compressed'
         },
         files: {
-          'assets/css/style.css': 'assets/_css/style.scss'
+          'public/css/style.css': 'assets/css/style.scss'
         }
       }
     }, // sass
 
     watch: {
       sass: {
-        files: ['assets/_css/*.sass'],
+        files: ['assets/css/*.sass'],
         tasks: ['sass']
       },
       dist: {
         files: [
-        'assets/_js/**/*',
-        'assets/_css/**/*'
+        'assets/js/**/*',
+        'assets/css/**/*'
         ],
 
         tasks: ['uglify', 'sass']

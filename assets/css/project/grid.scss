@@ -17,7 +17,7 @@
 .row {
 	@extend .clearfix;
 	@include box-sizing(border-box);
-	
+
 	width: 100%;
 }
 

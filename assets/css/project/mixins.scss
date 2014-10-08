@@ -10,7 +10,7 @@
 // background gradient
 @mixin background-gradient($top, $bot){
 	background: $top;
-	
+
 	background: -webkit-linear-gradient(top, $top, $bot);
 	background:    -moz-linear-gradient(top, $top, $bot);
 	background:     -ms-linear-gradient(top, $top, $bot);
@@ -56,7 +56,7 @@
 
 
 // placeholder
-@mixin placeholder($color){	
+@mixin placeholder($color){
 	:-moz-placeholder { color: $color; }
 	::-moz-placeholder { color: $color;	}
 	:-ms-input-placeholder { color: $color; }

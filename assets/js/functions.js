@@ -1,7 +1,7 @@
-// Functions
+// functions
 
-// Active
-function active(base){
+// active
+var active = function(base){
   var url = $(location).attr('href').replace(base, '');
 
   if(url == ''){
@@ -11,8 +11,8 @@ function active(base){
   }
 };
 
-// First Last
-function first_last(elements){
+// first and last
+var first_last = function(elements){
   var elements = $(elements);
 
   elements.each(function(i){
@@ -21,14 +21,14 @@ function first_last(elements){
         $(this).addClass('first');
         break;
       case elements.length - 1:
-        $(this).addClass('last'); 
+        $(this).addClass('last');
         break;
     }
   });
 };
 
-// Even Odd
-function even_odd(elements){
+// even and odd
+var even_odd = function(elements){
   $(elements).each(function(index){
     if((index % 2) == 0){
       $(this).addClass('odd');
@@ -38,19 +38,19 @@ function even_odd(elements){
   });
 };
 
-// Up
-function up(){
+// up
+var up = function(){
   var up = $('#up');
 
   up
-    .attr('href', 'javascript:void();')
-    .on('click', function(){
-      $('html, body')
-        .stop()
-        .animate({ 
-          scrollTop: 0 
-        },400);
-    });
+  .attr('href', 'javascript:void();')
+  .on('click', function(){
+    $('html, body')
+    .stop()
+    .animate({
+      scrollTop: 0
+    },400);
+  });
 
   $(window).scroll(function(){
     if($(this).scrollTop() > 100){
@@ -61,15 +61,15 @@ function up(){
   });
 };
 
-// Go Back
-function goback(){
+// go back
+var goback = function(){
   var goback = $('.goback');
 
   goback.each(function(){
     $(this)
-      .attr('href', 'javascript:void();')
-      .on('click', function(){
-        history.go(-1);
-      });
+    .attr('href', 'javascript:void();')
+    .on('click', function(){
+      history.go(-1);
+    });
   });
 };
