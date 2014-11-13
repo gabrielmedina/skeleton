@@ -16,8 +16,7 @@ module.exports = function(grunt){
           'public/js/main.js':
           [
             'assets/bower/jquery/dist/jquery.js',
-            'assets/js/functions.js',
-            'assets/js/main.js'
+            'assets/js/*'
           ]
         }
       }

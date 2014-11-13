@@ -1,46 +1,17 @@
 // functions
 
 // active
-var active = function(base){
-  var url = $(location).attr('href').replace(base, '');
+(function(){
+  var location = window.location.pathname;
+  location = location.split('/');
 
-  if(url == ''){
-    $('a[href="/"]').addClass('active');
-  } else {
-    $('a[href="'+ url[0] + '"').addClass('active');
-  }
-};
+  $('a[href="/'+ location[1] +'"]').addClass('active');
+});
 
-// first and last
-var first_last = function(elements){
-  var elements = $(elements);
-
-  elements.each(function(i){
-    switch(i){
-      case 0:
-        $(this).addClass('first');
-        break;
-      case elements.length - 1:
-        $(this).addClass('last');
-        break;
-    }
-  });
-};
-
-// even and odd
-var even_odd = function(elements){
-  $(elements).each(function(index){
-    if((index % 2) == 0){
-      $(this).addClass('odd');
-    } else {
-      $(this).addClass('even');
-    }
-  });
-};
 
 // up
-var up = function(){
-  var up = $('#up');
+(function(){
+  var up = $('.up');
 
   up
   .attr('href', 'javascript:void();')
@@ -59,17 +30,18 @@ var up = function(){
       up.fadeOut();
     }
   });
-};
+});
 
-// go back
-var goback = function(){
-  var goback = $('.goback');
 
-  goback.each(function(){
+// back
+(function(){
+  var back = $('.back');
+
+  back.each(function(){
     $(this)
     .attr('href', 'javascript:void();')
     .on('click', function(){
       history.go(-1);
     });
   });
-};
+});
