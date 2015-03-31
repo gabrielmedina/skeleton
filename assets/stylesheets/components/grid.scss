@@ -1,0 +1,93 @@
+// grid
+
+@if $responsive == true {
+  .row {
+    width: 85%;
+    margin: 0 auto;
+
+    @extend %cleafix;
+
+    @media (min-width: $large) {
+      width: $large;
+    }
+  }
+} @else if $responsive == false {
+  .row {
+    width: $large;
+    margin: 0 auto;
+
+    @extend %cleafix;
+  }
+}
+
+.columns {
+  @include box-sizing(border-box);
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0 $padding-medium;
+}
+
+@if $responsive == true {
+  @media (max-width: $medium) {
+    @for $i from 1 through $columns {
+      .small-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+    }
+  }
+
+  @media (min-width: $medium) and (max-width: $large) {
+    @for $i from 1 through $columns {
+      .medium-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+    }
+  }
+
+  @media (min-width: $large) {
+    @for $i from 1 through $columns {
+      .large-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+    }
+  }
+} @else if $responsive == false {
+  @for $i from 1 through $columns {
+    .large-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+  }
+}
+
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+
+.hide {
+  display: none !important;
+}
+
+.small-hide {
+  @media (max-width: $medium) {
+    display: none !important;
+  }
+}
+
+.medium-hide {
+  @media (max-width: $large) {
+    display: none !important;
+  }
+}
+
+.large-hide {
+  @media (min-width: $large) {
+    display: none !important;
+  }
+}
