@@ -11,93 +11,124 @@ $padding: 0.9375em;
 
 
 @if $responsive == true {
+  // for responsives
   .row {
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     margin: 0 auto;
 
-    @extend %cleafix;
-
     @media (min-width: $desktop) {
-      max-width: $desktop;
+      width: $desktop;
     }
   }
 } @else if $responsive == false {
+  // for no responsives
   .row {
+    display: flex;
+    justify-content: space-between;
+
     width: $desktop;
     margin: 0 auto;
-
-    @extend %cleafix;
   }
 }
 
 .columns {
   @include box-sizing(border-box);
   position: relative;
-  float: left;
   width: 100%;
-  padding: 0 $padding;
+
+  padding: 0 10px;
+
+  border: solid 1px #ccc;
 }
-
-@if $responsive == true {
-  @media (max-width: $tablet) {
-    @for $i from 1 through $columns {
-      .small-#{$i} {
-        width: (100% / $columns) * $i;
-      }
-    }
-  }
-
-  @media (min-width: $tablet) and (max-width: $desktop) {
-    @for $i from 1 through $columns {
-      .medium-#{$i} {
-        width: (100% / $columns) * $i;
-      }
-    }
-  }
-
-  @media (min-width: $desktop) {
-    @for $i from 1 through $columns {
-      .large-#{$i} {
-        width: (100% / $columns) * $i;
-      }
-    }
-  }
-} @else if $responsive == false {
-  @for $i from 1 through $columns {
-    .large-#{$i} {
-      width: (100% / $columns) * $i;
-    }
-  }
-}
-
-
-.left {
-  float: left !important;
-}
-
-.right {
-  float: right !important;
-}
-
 
 .hide {
   display: none !important;
 }
 
-.small-hide {
+
+@if $responsive == true {
+  // for smartphones
   @media (max-width: $tablet) {
-    display: none !important;
-  }
-}
+    .small-column {
+      flex-direction: column;
+    }
 
-.medium-hide {
-  @media (max-width: $desktop) {
-    display: none !important;
-  }
-}
+    @for $i from 1 through $columns {
+      .small-#{$i} {
+        width: (100% / $columns) * $i;
+      }
 
-.large-hide {
+      .small-order-#{$i} {
+        order: $i;
+      }
+    }
+
+    .small-hide {
+      display: none !important;
+    }
+  }
+
+  // for tablets
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    .medium-column {
+      flex-direction: column;
+    }
+
+    .medium-hide {
+      display: none !important;
+    }
+
+    @for $i from 1 through $columns {
+      .medium-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+
+      .medium-order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+
+  // for desktop
   @media (min-width: $desktop) {
+    .large-column {
+      flex-direction: column;
+    }
+
+    .large-hide {
+      display: none !important;
+    }
+
+    @for $i from 1 through $columns {
+      .large-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+
+      .large-order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+} @else if $responsive == false {
+  // for no responsives
+  .large-column {
+    flex-direction: column;
+  }
+
+  .large-hide {
     display: none !important;
+  }
+
+  @for $i from 1 through $columns {
+    .large-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+
+    .large-order-#{$i} {
+      order: $i;
+    }
   }
 }
