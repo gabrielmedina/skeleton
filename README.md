@@ -10,7 +10,7 @@
 
 ### Colaborar
 
-Para colaborar com este projeto, você irá precisar ter instalado em sua máquina: 
+Para colaborar com este projeto, você precisa ter instalado em sua máquina: 
 - NodeJS (Grunt e Bower); e 
 - Ruby (Sass).
 
