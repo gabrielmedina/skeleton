@@ -1,33 +1,38 @@
 # Boilerplate
 
-> HTML5 Boilerplate adaptado para trabalhar com Bower e Grunt.
+> HTML5 Boilerplate adaptado.
 
 ![image](http://s28.postimg.org/5atncvv9p/blog_banner_gruntbower_0.jpg)
 
-### Linguagens
+### Componentes
 
-- Node: NPM, Grunt e Bower
-- Ruby: Sass
+- Grid;
 
-### Como utilizar
+### Colaborar
 
-Baixe as dependências do NPM
+Para colaborar com este projeto, você irá precisar ter instalado em sua máquina: 
+- NodeJS (Grunt e Bower); e 
+- Ruby (Sass).
+
+Caso possua os itens supracitados, basta baixar as dependências do NPM:
 
 ```shell
 npm install
 ```
 
-Baixe as dependências do Bower
+Baixar as dependências do Bower:
 
 ```shell
 bower install
 ```
 
-Ative o Grunt
+Ativar o Grunt:
 
 ```shell
 grunt w
 ```
+
+E ser feliz! :)
 
 ============
 gmedina.santos@gmail.com
