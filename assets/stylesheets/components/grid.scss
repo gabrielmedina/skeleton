@@ -1,0 +1,134 @@
+// grid
+
+$responsive: true;
+
+$columns: 12;
+
+$tablet: 640px;
+$desktop: 1000px;
+
+$padding: 0.9375em;
+
+
+@if $responsive == true {
+  // for responsives
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
+} @else if $responsive == false {
+  // for no responsives
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    width: $desktop;
+    margin: 0 auto;
+  }
+}
+
+.columns {
+  @include box-sizing(border-box);
+  position: relative;
+  width: 100%;
+
+  padding: 0 10px;
+
+  border: solid 1px #ccc;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+@if $responsive == true {
+  // for smartphones
+  @media (max-width: $tablet) {
+    .small-column {
+      flex-direction: column;
+    }
+
+    @for $i from 1 through $columns {
+      .small-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+
+      .small-order-#{$i} {
+        order: $i;
+      }
+    }
+
+    .small-hide {
+      display: none !important;
+    }
+  }
+
+  // for tablets
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    .medium-column {
+      flex-direction: column;
+    }
+
+    .medium-hide {
+      display: none !important;
+    }
+
+    @for $i from 1 through $columns {
+      .medium-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+
+      .medium-order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+
+  // for desktop
+  @media (min-width: $desktop) {
+    .large-column {
+      flex-direction: column;
+    }
+
+    .large-hide {
+      display: none !important;
+    }
+
+    @for $i from 1 through $columns {
+      .large-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+
+      .large-order-#{$i} {
+        order: $i;
+      }
+    }
+  }
+} @else if $responsive == false {
+  // for no responsives
+  .large-column {
+    flex-direction: column;
+  }
+
+  .large-hide {
+    display: none !important;
+  }
+
+  @for $i from 1 through $columns {
+    .large-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+
+    .large-order-#{$i} {
+      order: $i;
+    }
+  }
+}

@@ -2,10 +2,13 @@
 
 // boilerplate
 @import "boilerplate/normalize";
-@import "boilerplate/boilerplate-initial";
+@import "boilerplate/initial";
+
+// mixins
+@import "components/mixins";
 
 // components
-
+@import "components/grid";
 
 // boilerplate
-@import "boilerplate/boilerplate-end";
+@import "boilerplate/end";
