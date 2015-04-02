@@ -4,10 +4,8 @@ $responsive: true;
 
 $columns: 12;
 
-$tablet: 640px;
-$desktop: 1000px;
-
-$padding: 0.9375em;
+$medium: 768px;
+$large: 990px;
 
 
 @if $responsive == true {
@@ -19,8 +17,8 @@ $padding: 0.9375em;
     width: 100%;
     margin: 0 auto;
 
-    @media (min-width: $desktop) {
-      width: $desktop;
+    @media (min-width: $large) {
+      width: $large;
     }
   }
 
@@ -38,7 +36,7 @@ $padding: 0.9375em;
     display: flex;
     justify-content: space-between;
 
-    width: $desktop;
+    width: $large;
     margin: 0 auto;
   }
 
@@ -54,14 +52,8 @@ $padding: 0.9375em;
 
 .columns {
   @include box-sizing(border-box);
-  border: solid 1px #ccc;
-
   position: relative;
   width: 100%;
-
-  padding: 0 10px;
-
-  border: solid 1px #ccc;
 }
 
 .no-flexbox {
@@ -81,30 +73,44 @@ $padding: 0.9375em;
 
 @if $responsive == true {
   // for smartphones
-  @media (max-width: $tablet) {
+  @media (max-width: $medium) {
     .small-column {
       flex-direction: column;
-    }
 
-    @for $i from 1 through $columns {
-      .small-#{$i} {
-        width: (100% / $columns) * $i;
-      }
-
-      .small-order-#{$i} {
-        order: $i;
+      .columns,
+      .columns:last-of-type {
+        float: none;
       }
     }
 
     .small-hide {
       display: none !important;
     }
+
+    @for $i from 1 through $columns {
+      .small-#{$i} {
+        width: (100% / $columns) * $i;
+      }
+    }
+
+    .small-order {
+      @for $i from 1 through $columns {
+        .order-#{$i} {
+          order: $i;
+        }
+      }
+    }
   }
 
   // for tablets
-  @media (min-width: $tablet) and (max-width: $desktop) {
+  @media (min-width: $medium) and (max-width: $large) {
     .medium-column {
       flex-direction: column;
+
+      .columns,
+      .columns:last-of-type {
+        float: none;
+      }
     }
 
     .medium-hide {
@@ -115,17 +121,26 @@ $padding: 0.9375em;
       .medium-#{$i} {
         width: (100% / $columns) * $i;
       }
+    }
 
-      .medium-order-#{$i} {
-        order: $i;
+    .medium-order {
+      @for $i from 1 through $columns {
+        .order-#{$i} {
+          order: $i;
+        }
       }
     }
   }
 
   // for desktop
-  @media (min-width: $desktop) {
+  @media (min-width: $large) {
     .large-column {
       flex-direction: column;
+
+      .columns,
+      .columns:last-of-type {
+        float: none;
+      }
     }
 
     .large-hide {
@@ -136,9 +151,13 @@ $padding: 0.9375em;
       .large-#{$i} {
         width: (100% / $columns) * $i;
       }
+    }
 
-      .large-order-#{$i} {
-        order: $i;
+    .large-order {
+      @for $i from 1 through $columns {
+        .order-#{$i} {
+          order: $i;
+        }
       }
     }
   }
@@ -146,6 +165,11 @@ $padding: 0.9375em;
   // for no responsives
   .large-column {
     flex-direction: column;
+
+    .columns,
+    .columns:last-of-type {
+      float: none;
+    }
   }
 
   .large-hide {
@@ -156,9 +180,13 @@ $padding: 0.9375em;
     .large-#{$i} {
       width: (100% / $columns) * $i;
     }
+  }
 
-    .large-order-#{$i} {
-      order: $i;
+  .large-order {
+    @for $i from 1 through $columns {
+      .order-#{$i} {
+        order: $i;
+      }
     }
   }
 }
