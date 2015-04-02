@@ -19,6 +19,10 @@ $large: 990px;
 
     @media (min-width: $large) {
       width: $large;
+
+      .row {
+        width: 100%;
+      }
     }
   }
 
@@ -38,6 +42,10 @@ $large: 990px;
 
     width: $large;
     margin: 0 auto;
+
+    .row {
+      width: 100%;
+    }
   }
 
   .no-flexbox {
