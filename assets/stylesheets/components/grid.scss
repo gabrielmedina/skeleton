@@ -23,6 +23,15 @@ $padding: 0.9375em;
       width: $desktop;
     }
   }
+
+  .no-flexbox {
+    .row {
+      display: block;
+      justify-content: none;
+
+      @extend %clearfix;
+    }
+  }
 } @else if $responsive == false {
   // for no responsives
   .row {
@@ -32,16 +41,37 @@ $padding: 0.9375em;
     width: $desktop;
     margin: 0 auto;
   }
+
+  .no-flexbox {
+    .row {
+      display: block;
+      justify-content: none;
+
+      @extend %clearfix;
+    }
+  }
 }
 
 .columns {
   @include box-sizing(border-box);
+  border: solid 1px #ccc;
+
   position: relative;
   width: 100%;
 
   padding: 0 10px;
 
   border: solid 1px #ccc;
+}
+
+.no-flexbox {
+  .columns {
+    float: left;
+  }
+
+  .columns:last-of-type {
+    float: right;
+  }
 }
 
 .hide {
