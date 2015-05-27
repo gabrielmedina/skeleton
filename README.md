@@ -6,13 +6,20 @@
 
 ### Componentes
 
-- Grid;
+- [Bourbon](http://bourbon.io/)
+- [Neat](http://neat.bourbon.io/)
+- [Owl Carousel](http://owlgraphic.com/owlcarousel/)
 
-### Colaborar
+### Como utilizar
 
-Para colaborar com este projeto, você precisa ter instalado em sua máquina: 
-- NodeJS (Grunt e Bower); e 
-- Ruby (Sass).
+Você precisa ter instalado em sua máquina:
+- NodeJS
+  - Grunt
+  - Bower
+
+
+- Ruby
+  - Sass
 
 Caso possua os itens supracitados, basta baixar as dependências do NPM:
 

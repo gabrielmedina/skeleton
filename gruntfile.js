@@ -31,8 +31,8 @@ module.exports = function(grunt){
         files: {
           'public/stylesheets/application.css':
           [
-            'assets/bower/bourbon/app/assets/stylesheets/_bourbon.scss',
-            'assets/bower/neat/app/assets/stylesheets/_neat.scss',
+            'assets/bower/bourbon/app/assets/stylesheets/bourbon.scss',
+            'assets/bower/neat/app/assets/stylesheets/neat.scss',
             'assets/bower/owlcar/owl-carousel/owl.carousel.css',
             'assets/stylesheets/application.scss'
           ]
