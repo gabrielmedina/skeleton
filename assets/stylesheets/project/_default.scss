@@ -1,0 +1,21 @@
+// default
+
+html {
+  font-size: 10px;
+}
+
+body {
+  @include span-columns(6);
+  font-size: 10px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}

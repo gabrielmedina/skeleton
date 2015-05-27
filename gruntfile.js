@@ -16,6 +16,7 @@ module.exports = function(grunt){
           'public/javascripts/application.js':
           [
             'assets/bower/jquery/dist/jquery.js',
+            'assets/bower/owlcar/owl-carousel/owl.carousel.min.js',
             'assets/javascripts/*'
           ]
         }
@@ -30,6 +31,9 @@ module.exports = function(grunt){
         files: {
           'public/stylesheets/application.css':
           [
+            'assets/bower/bourbon/app/assets/stylesheets/_bourbon.scss',
+            'assets/bower/neat/app/assets/stylesheets/_neat.scss',
+            'assets/bower/owlcar/owl-carousel/owl.carousel.css',
             'assets/stylesheets/application.scss'
           ]
         }

@@ -4,11 +4,8 @@
 @import "boilerplate/normalize";
 @import "boilerplate/initial";
 
-// mixins
-@import "components/mixins";
-
-// components
-@import "components/grid";
+// project
+@import "project/default";
 
 // boilerplate
 @import "boilerplate/end";
