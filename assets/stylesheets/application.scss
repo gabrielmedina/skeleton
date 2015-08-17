@@ -1,11 +1,9 @@
 // application
 
-// boilerplate
-@import "boilerplate/normalize";
-@import "boilerplate/initial";
+// bourbon
+@import "bourbon";
+@import "base/base";
+@import "neat";
 
 // project
 @import "project/default";
-
-// boilerplate
-@import "boilerplate/end";

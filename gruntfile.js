@@ -8,12 +8,12 @@ module.exports = function(grunt){
 
       target: {
         files: {
-          'public/javascripts/modernizr.js':
+          'public/js/modernizr.js':
           [
             'assets/bower/modernizr/modernizr.js'
           ],
 
-          'public/javascripts/application.js':
+          'public/js/application.js':
           [
             'assets/bower/jquery/dist/jquery.js',
             'assets/bower/owlcar/owl-carousel/owl.carousel.min.js',
@@ -26,14 +26,13 @@ module.exports = function(grunt){
     sass: {
       dist: {
         options: {
-          style: 'compressed'
+          style: 'compressed',
+          loadPath: require('node-bourbon').includePaths,
+          loadPath: require('node-neat').includePaths
         },
         files: {
-          'public/stylesheets/application.css':
+          'public/css/application.css':
           [
-            'assets/bower/bourbon/app/assets/stylesheets/bourbon.scss',
-            'assets/bower/neat/app/assets/stylesheets/neat.scss',
-            'assets/bower/owlcar/owl-carousel/owl.carousel.css',
             'assets/stylesheets/application.scss'
           ]
         }
