@@ -1,0 +1,25 @@
+// grid
+
+$mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(min-width 480px max-width 1024px);
+$desktop: new-breakpoint(min-width 1024px);
+
+.container {
+  @include outer-container(100%);
+}
+
+.row {
+  @include row;
+}
+
+@include media($tablet){
+  .container {
+    @include outer-container(100%);
+  }
+}
+
+@include media($desktop){
+  .container {
+    @include outer-container(960px);
+  }
+}
