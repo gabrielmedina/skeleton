@@ -1,7 +1,5 @@
 # Boilerplate
 
-![image](http://s28.postimg.org/5atncvv9p/blog_banner_gruntbower_0.jpg)
-
 ### Componentes
 
 - [Bourbon](http://bourbon.io/)
@@ -38,7 +36,7 @@ Ativar o Grunt:
 grunt w
 ```
 
-E seja feliz! :)
+E ser feliz! :)
 
 ============
 gmedina.santos@gmail.com
