@@ -44,10 +44,22 @@ module.exports = function(grunt){
         files: ['assets/stylesheets/*.sass'],
         tasks: ['sass']
       },
+
+      lr: {
+        options: {
+          livereload: 1337
+        },
+
+        files: [
+          'assets/stylesheets/**/*',
+          'assets/javascripts/**/*'
+        ]
+      },
+
       dist: {
         files: [
-        'assets/javascripts/**/*',
-        'assets/stylesheets/**/*'
+          'assets/javascripts/**/*',
+          'assets/stylesheets/**/*'
         ],
 
         tasks: ['uglify', 'sass']
