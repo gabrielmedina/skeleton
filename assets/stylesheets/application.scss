@@ -1,8 +1,8 @@
 // application
 
 // owl
-@import "owl/owl.carousel";
-@import "owl/owl.theme";
+@import "owl/carousel";
+@import "owl/theme";
 
 // bourbon
 @import "bourbon";
@@ -11,8 +11,10 @@
 
 // project
 @import "project/variables";
+@import "project/breakpoint";
+@import "project/grid";
+
 @import "project/aside";
 @import "project/default";
 @import "project/footer";
-@import "project/grid";
 @import "project/header";
