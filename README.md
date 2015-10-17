@@ -1,7 +1,8 @@
 # Boilerplate
 
-### Componentes
+### Bibliotecas
 
+- [jQuery](https://jquery.com/)
 - [Bourbon](http://bourbon.io/)
 - [Neat](http://neat.bourbon.io/)
 - [Bitters](http://bitters.bourbon.io/)
@@ -9,28 +10,23 @@
 
 ### Como utilizar
 
-Você precisa ter instalado em sua máquina:
-- NodeJS
-  - Grunt
-  - Bower
+Você precisa ter NodeJS (Grunt e Bower) e Ruby (Sass)
+instalado em sua máquina.
 
-
-- Ruby
-  - Sass
-
-Caso possua os itens supracitados, basta baixar as dependências do NPM:
+Caso possua os itens supracitados,
+basta baixar as dependências do npm
 
 ```shell
 npm install
 ```
 
-Baixar as dependências do Bower:
+Baixar as dependências do Bower
 
 ```shell
 bower install
 ```
 
-Ativar o Grunt:
+Ativar o Grunt
 
 ```shell
 grunt w
