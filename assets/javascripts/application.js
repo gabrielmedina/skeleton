@@ -13,7 +13,7 @@ $(document).ready(function(){
       $('a[href="'+ url +'"]').addClass('active');
     }
   })();
-  
+
 
   // owl carousel
   (function(){
@@ -44,11 +44,13 @@ $(document).ready(function(){
     var html = $('html');
     var btn = $('.header-navicon');
 
-    btn.attr('href', 'javascript:void(0);');
+    if(btn.length){
+      btn.attr('href', 'javascript:void(0);');
 
-    btn.click(function(){
-      html.toggleClass('header-active');
-    });
+      btn.click(function(){
+        html.toggleClass('header-active');
+      });
+    }
   })();
 
 
@@ -56,8 +58,10 @@ $(document).ready(function(){
   (function(){
     var link = $('.no-link');
 
-    link.click(function(e){
-      e.preventDefault();
-    });
+    if(link.length){
+      link.click(function(e){
+        e.preventDefault();
+      });
+    }
   })();
 });
