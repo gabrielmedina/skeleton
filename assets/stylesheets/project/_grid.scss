@@ -8,13 +8,13 @@
   @include row;
 }
 
-@include media($tablet){
+@include media($tablets){
   .container {
     @include outer-container(100%);
   }
 }
 
-@include media($desktop){
+@include media($laptops){
   .container {
     @include outer-container(960px);
   }

@@ -1,20 +1,22 @@
 // application
 
+// library
+@import "bourbon";
+@import "neat";
+
 // owl
 @import "owl/carousel";
 @import "owl/theme";
 
-// bourbon
-@import "bourbon";
-@import "base/base";
-@import "neat";
+// HTML5 normalize
+@import "project/normalize";
 
 // project
 @import "project/variables";
 @import "project/breakpoint";
 @import "project/grid";
 
-@import "project/aside";
 @import "project/default";
-@import "project/footer";
 @import "project/header";
+@import "project/footer";
+@import "project/aside";

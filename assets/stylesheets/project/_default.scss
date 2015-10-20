@@ -1,5 +1,16 @@
 // default
 
+html,
 body {
-  font-family: '', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.6;
+
+  font-family: $family-body;
+  font-size: 16px;
+
+  margin: 0;
+  padding: 0;
 }

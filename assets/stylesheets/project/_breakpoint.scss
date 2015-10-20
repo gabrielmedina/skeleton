@@ -1,13 +1,13 @@
 // breakpoints
 
-$mobile: new-breakpoint(min-width 481px);
-$mobile_max: new-breakpoint(max-width 480px);
+$phones      : new-breakpoint(min-width 320px);
+$phones_max  : new-breakpoint(max-width 767px);
+$phones_only : new-breakpoint(min-width 320px max-width 767px);
 
-$tablet: new-breakpoint(min-width 769px);
-$tablet_max: new-breakpoint(max-width 768px);
+$tablets     : new-breakpoint(min-width 768px);
+$tablets_max : new-breakpoint(max-width 1023px);
+$tablets_only: new-breakpoint(min-width 768px max-width 1023px);
 
-$desktop: new-breakpoint(min-width 1025px);
-$desktop_max: new-breakpoint(max-width 1024px);
-
-$tv: new-breakpoint(min-width 1201px);
-$tv_max: new-breakpoint(max-width 1200px);
+$laptops     : new-breakpoint(min-width 1024px);
+$laptops_max : new-breakpoint(max-width 1600px);
+$laptops_only: new-breakpoint(min-width 1024px max-width 1600px);

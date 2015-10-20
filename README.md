@@ -2,27 +2,20 @@
 
 > For simple projects
 
-## Libraries
 
+## Libraries
 
 #### [jQuery](https://jquery.com/)
 The Write Less, Do More, JavaScript Library.
 
-
 #### [Owl Carousel](http://owlgraphic.com/owlcarousel/)
 Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
-
 
 #### [Bourbon](http://bourbon.io/)
 A simple and lightweight mixin library for Sass.
 
-
 #### [Neat](http://neat.bourbon.io/)
 A lightweight semantic grid framework for Sass and Bourbon.
-
-
-#### [Bitters](http://bitters.bourbon.io/)
-Scaffold styles, variables and structure for Bourbon projects.
 
 #### [Ionicons](http://ionicons.com/)
 The premium icon font for Ionic Framework.
