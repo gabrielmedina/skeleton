@@ -13,6 +13,7 @@ $(document).ready(function(){
       $('a[href="'+ url +'"]').addClass('active');
     }
   })();
+  
 
   // owl carousel
   (function(){
@@ -22,6 +23,7 @@ $(document).ready(function(){
       owl.owlCarousel();
     }
   })();
+
 
   // back history
   (function(){
@@ -34,5 +36,28 @@ $(document).ready(function(){
         window.history.back(-1);
       });
     }
+  })();
+
+
+  // nav
+  (function(){
+    var html = $('html');
+    var btn = $('.header-navicon');
+
+    btn.attr('href', 'javascript:void(0);');
+
+    btn.click(function(){
+      html.toggleClass('header-active');
+    });
+  })();
+
+
+  // no link
+  (function(){
+    var link = $('.no-link');
+
+    link.click(function(e){
+      e.preventDefault();
+    });
   })();
 });
