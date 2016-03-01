@@ -2,9 +2,9 @@
 
 > Inspired in [Skeleton Project Rails](https://github.com/luizpicolo/skeleton-project-rails)
 
-## How to use
+# How to use
 
-#### Required
+### Required
 - Node.js (Grunt and Bower)
 - Ruby (Sass)
 
