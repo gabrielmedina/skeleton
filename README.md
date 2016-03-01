@@ -2,50 +2,41 @@
 
 > For simple projects
 
-
-## Libraries
-
-#### [jQuery](https://jquery.com/)
-The Write Less, Do More, JavaScript Library.
-
-#### [Owl Carousel](http://owlgraphic.com/owlcarousel/)
-Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.
-
-#### [Bourbon](http://bourbon.io/)
-A simple and lightweight mixin library for Sass.
-
-#### [Neat](http://neat.bourbon.io/)
-A lightweight semantic grid framework for Sass and Bourbon.
-
-#### [Ionicons](http://ionicons.com/)
-The premium icon font for Ionic Framework.
-
-
 ## How to use
 
 #### Required
 - Node.js (Grunt and Bower)
 - Ruby (Sass)
 
-Download the dependencies of NPM
+Dependencies of NPM
 
 ```shell
 npm install
 ```
 
-Download the dependencies of Bower
+Dependencies of Bower
 
 ```shell
 bower install
 ```
 
-Enable the Grunt
+Run Grunt
 
 ```shell
 grunt w
 ```
 
 :ship:
+
+
+# Libraries
+
+- [jQuery](https://jquery.com/)
+- [Owl Carousel](http://owlgraphic.com/owlcarousel/)
+- [Bourbon](http://bourbon.io/)
+- [Neat](http://neat.bourbon.io/)
+- [Ionicons](http://ionicons.com/)
+
 
 ============
 gmedina.santos@gmail.com
