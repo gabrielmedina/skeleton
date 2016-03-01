@@ -1,26 +1,63 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="icon" href="public/img/icon.png">
 
-    <title>Boilerplate</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="">
+  <title>Skeleton</title>
 
-    <link rel="icon" href="public/img/favicon.ico">
+  <meta name="description" content="">
 
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="public/css/application.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="public/css/application.css">
 
-    <script src="public/js/modernizr.js"></script>
-  </head>
+  <script src="public/js/modernizr.js"></script>
+</head>
 
-  <body>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__image" src="public/img/logo.png" alt="Boilerplate">
+        </a>
+      </div>
 
+      <a class="nav__btn nav--open ion-navicon" href="#"></a>
 
-    <script src="public/js/application.js"></script>
-    <script src="//localhost:1337/livereload.js"></script>
-  </body>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="https://github.com/gabrielmedina/skeleton">Fork</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <p>Skeleton for new projects</p>
+      <p>Inspired in <a href="https://github.com/luizpicolo/skeleton-project-rails">Skeleton Project Rails</a></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <small class="footer__small">
+        &copy 2016 - Todos os direitos reservados.
+      </small>
+
+      <div class="footer__author">
+        Desenvolvido por: <a class="footer__link" href="https://github.com/gabrielmedina">Gabriel Medina</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="public/js/application.js"></script>
+  <script src="//localhost:1337/livereload.js"></script>
+</body>
 </html>

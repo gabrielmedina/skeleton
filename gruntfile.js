@@ -17,7 +17,8 @@ module.exports = function(grunt){
           [
             'assets/bower/jquery/dist/jquery.js',
             'assets/bower/owlcar/owl-carousel/owl.carousel.min.js',
-            'assets/javascripts/*'
+            'assets/javascripts/project/**.js',
+            'assets/javascripts/**.js'
           ]
         }
       }
