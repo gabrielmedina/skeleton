@@ -1,6 +1,6 @@
-# Boilerplate
+# Skeleton
 
-> For simple projects
+> Inspired in [Skeleton Project Rails](https://github.com/luizpicolo/skeleton-project-rails)
 
 ## How to use
 
