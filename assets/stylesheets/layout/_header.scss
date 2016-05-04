@@ -1,7 +1,8 @@
 // header
 
 .header {
-  padding: 2rem 0;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 @include media($screen-md) {

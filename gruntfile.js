@@ -34,6 +34,7 @@ module.exports = function(grunt){
         files: {
           'public/css/application.css':
           [
+            'bower/owlcar/owl-carousel/owl.carousel.css',
             'assets/stylesheets/application.scss'
           ]
         }

@@ -1,11 +1,16 @@
 // breakpoints
 
+$breakpoint-ty: 460px;
 $breakpoint-sm: 768px;
 $breakpoint-md: 990px;
 $breakpoint-lg: 1200px;
 
+$screen-ty:     new-breakpoint(min-width $breakpoint-ty);
+$screen-ty-max: new-breakpoint(max-width $breakpoint-ty);
+
 $screen-sm:     new-breakpoint(min-width $breakpoint-sm);
 $screen-sm-max: new-breakpoint(max-width $breakpoint-sm);
+$screen-sm-only: new-breakpoint(min-width $breakpoint-ty max-width $breakpoint-sm);
 
 $screen-md:     new-breakpoint(min-width $breakpoint-md);
 $screen-md-max: new-breakpoint(max-width $breakpoint-md);
