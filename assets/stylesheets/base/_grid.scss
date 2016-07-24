@@ -10,21 +10,85 @@ $container-lg: 1120px;
 .container {
   @include row;
   padding: 0 1rem;
-
-  @include media($screen-sm) {
-    @include outer-container($container-sm);
-    padding: 0;
-  }
-
-  @include media($screen-md) {
-    @include outer-container($container-md);
-  }
-
-  @include media($screen-lg) {
-    @include outer-container($container-lg);
-  }
 }
 
 .row {
   @include row;
+}
+
+@include media($screen-sm) {
+  .container {
+    @include outer-container($container-sm);
+    padding: 0;
+  }
+}
+
+@include media($screen-md) {
+  .container {
+    @include outer-container($container-md);
+  }
+
+  .center {
+    float: none;
+    margin: 0 auto !important;
+  }
+
+  .one {
+    @include span-columns(1);
+    @include omega(12n);
+  }
+
+  .two {
+    @include span-columns(2);
+    @include omega(6n);
+  }
+
+  .three {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+
+  .four {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
+  .five {
+    @include span-columns(5);
+  }
+
+  .six {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  .seven {
+    @include span-columns(7);
+  }
+
+  .eight {
+    @include span-columns(8);
+  }
+
+  .nine {
+    @include span-columns(9);
+  }
+
+  .ten {
+    @include span-columns(10);
+  }
+
+  .eleven {
+    @include span-columns(11);
+  }
+
+  .twelve {
+    @include span-columns(12);
+  }
+}
+
+@include media($screen-lg) {
+  .container {
+    @include outer-container($container-lg);
+  }
 }

@@ -22,6 +22,7 @@ $(function(){
   // nav
   nav.open(
     $('html'),
+    $('.nav'),
     $('.nav__link'),
     $('.nav__btn'),
     'nav--opened'

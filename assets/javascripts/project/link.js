@@ -15,9 +15,9 @@ var link = {
     var url = '';
 
     for (var i = 1; i < path.length; i++) {
-      url += '/' + path[i];
-
+      url += path[i];
       $('a[href="'+ url +'"]').addClass(modifier);
+      url += '/';
     }
   },
 
