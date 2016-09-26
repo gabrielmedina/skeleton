@@ -3,42 +3,40 @@
 .footer {
   cursor: default;
 
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   color: lighten($black, 40%);
-  font-size: .9rem;
+  font-size: .8em;
   text-align: center;
   text-transform: uppercase;
 }
 
 .footer__link {
+  color: $primary;
+  font-size: 1em;
   text-decoration: none;
 }
 
-
 .footer__small {
-  font-size: 1rem;
+  font-size: 1em;
 }
-
 
 .footer__author {
-  font-size: .7rem;
-  margin-top: 1rem;
+  font-size: 1em;
+  margin-top: .5rem;
 }
-
 
 @include media($screen-md) {
   .footer {
     text-align: left;
+  }
 
-    .container {
-      position: relative;
-    }
+  .footer__small {
+    float: left;
   }
 
   .footer__author {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
+    margin-top: 0;
   }
 }

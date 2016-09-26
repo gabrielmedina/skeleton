@@ -1,12 +1,11 @@
 // aside
 
 .aside {
-  margin-top: 2rem;
+
 }
 
 @include media($screen-sm) {
   .aside {
-    margin-top: 0;
-    @include span-columns(4);
+
   }
 }

@@ -1,6 +1,6 @@
 // nav
 
-var nav = {
+var _nav = {
   open: function(container, nav, links, btn, modifier) {
     $(container).removeClass(modifier);
 

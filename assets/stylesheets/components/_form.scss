@@ -5,23 +5,44 @@
 }
 
 .form__field {
+  position: relative;
   margin-bottom: 1rem;
 }
 
-.form__label {
-  display: block;
-
-  font-size: 1rem;
-
-  margin-bottom: .2rem;
+.form__field--last {
+  margin-bottom: 0;
 }
 
+.form__label {
+  margin-bottom: .5rem;
+
+  display: block;
+
+  color: rgba($black, .8);
+  font-size: .8em;
+}
+
+.form__label--hidden {
+  display: none;
+}
 
 %fields {
   box-sizing: border-box;
   width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 .8rem;
+  background: none;
+  border: solid 1px rgba($black, .3);
 
-  padding: .8rem;
+  color: rgba($black, .6);
+  font-family: $family-one;
+  font-size: .8em;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
 }
 
 .form__input {
@@ -34,17 +55,46 @@
 
 .form__textarea {
   @extend %fields;
-  min-height: 6rem;
-}
 
+  min-height: 6rem;
+  line-height: 1.6;
+  padding: .6rem .8rem;
+}
 
 .form__submit {
-  text-align: right;
+  text-align: center;
 }
 
-
 @include media($screen-md) {
+  .form__row {
+    @include row;
+
+    .form__field {
+      @include span-columns(6);
+    }
+  }
+
+  .form__field {
+    margin-bottom: 2rem;
+  }
+
+  .form__label {
+    font-size: 1em;
+  }
+
+  %fields {
+    font-size: 1em;
+  }
+
   .form__textarea {
     min-height: 10rem;
+  }
+
+  .form__submit {
+    text-align: right;
+  }
+
+  .form__submit--center {
+    text-align: center;
   }
 }

@@ -2,25 +2,25 @@
 
 $(function(){
   // link
-  link.back(
+  _link.back(
     $('.link--back')
   );
 
-  link.current(
+  _link.current(
     'link--current'
   );
 
-  link.prevent(
+  _link.prevent(
     $('.link--prevent')
   );
 
   // owl
-  owl.slide(
+  _owl.slide(
     $('.slide')
   );
 
   // nav
-  nav.open(
+  _nav.open(
     $('html'),
     $('.nav'),
     $('.nav__link'),

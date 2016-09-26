@@ -16,8 +16,10 @@
 
 @include media($screen-md) {
   .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+  }
+
+  .logo__image {
+
   }
 }

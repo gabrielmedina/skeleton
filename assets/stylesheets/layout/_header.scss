@@ -5,6 +5,14 @@
   padding: 1rem 0;
 }
 
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
 @include media($screen-md) {
   .header {
     padding: 1rem 0;
@@ -12,5 +20,15 @@
     .container {
       position: relative;
     }
+  }
+
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header__nav {
+
   }
 }
