@@ -3,26 +3,83 @@
 $titles: h1, h2, h3, h4, h5, h6;
 
 @each $title in $titles {
-  #{$title} {
+  #{$title},
+  .title--#{$title} {
     font-family: $family-one;
     font-size: 1em;
   }
 }
 
-strong {
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+small {
+  font-size: 1em;
+}
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--bold {
   font-weight: 700;
+}
+
+.text--left {
+  text-align: left;
+
+  .btn,
+  .btn__icon {
+    margin-right: .5em;
+  }
+}
+
+.text--right {
+  text-align: right;
+
+  .btn,
+  .btn__icon {
+    margin-left: .5em;
+  }
+}
+
+.text--center {
+  text-align: center;
+
+  .btn,
+  .btn__icon {
+    margin-left: .25em;
+    margin-right: .25em;
+  }
 }
 
 @include media($screen-md) {
   .text--left {
-    text-align: left;
+    .link {
+      margin-right: 1em;
+    }
   }
 
   .text--right {
-    text-align: right;
+    .link {
+      margin-left: 1em;
+    }
   }
 
   .text--center {
-    text-align: center;
+    .link {
+      margin-left: .5em;
+      margin-right: .5em;
+    }
   }
 }

@@ -6,7 +6,6 @@ $container-sm: 720px;
 $container-md: 960px;
 $container-lg: 1120px;
 
-
 .container {
   @include row;
   padding: 0 1rem;

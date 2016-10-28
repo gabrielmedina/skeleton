@@ -1,0 +1,55 @@
+// link
+
+.link {
+  @extend .btn;
+
+  color: rgba($black, .6);
+  background: none;
+  border: 0;
+  border-radius: none;
+
+  &:hover,
+  &:focus {
+    color: $primary;
+    background: none;
+  }
+}
+
+.link--tiny {
+  @extend .btn--tiny;
+}
+
+.link--small {
+  @extend .btn--small;
+}
+
+.link--large {
+  @extend .btn--large;
+}
+
+.link--primary {
+  color: $primary;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 10%);
+  }
+}
+
+.link--block {
+  @extend .btn--block;
+}
+
+@include media($screen-md) {
+  .link {
+    padding: 0;
+  }
+
+  .link--left {
+    margin-right: 2em;
+  }
+
+  .link--right {
+    margin-left: 2em;
+  }
+}

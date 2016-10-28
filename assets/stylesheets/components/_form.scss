@@ -5,96 +5,104 @@
 }
 
 .form__field {
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.form__field--last {
-  margin-bottom: 0;
+  font-size: .9em;
+  margin-bottom: 1.5rem;
 }
 
 .form__label {
-  margin-bottom: .5rem;
-
   display: block;
 
-  color: rgba($black, .8);
+  color: lighten($black, 40%);
+  font-family: $family-one;
   font-size: .8em;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin-bottom: .8em;
 }
 
-.form__label--hidden {
-  display: none;
-}
-
-%fields {
+%form__fields {
   box-sizing: border-box;
   width: 100%;
   height: 3rem;
   line-height: 3rem;
-  padding: 0 .8rem;
-  background: none;
-  border: solid 1px rgba($black, .3);
+  padding: 0 1em;
+  border-radius: 4px;
+  border: solid 1px rgba($black, .2);
 
-  color: rgba($black, .6);
-  font-family: $family-one;
-  font-size: .8em;
+  color: lighten($black, 30%);
+  font-family: $family-two;
+  font-size: 1em;
+
+  outline: none;
 
   &:focus {
-    outline: none;
-    border-color: $primary;
+    border: solid 1px rgba($black, .4);
   }
 }
 
 .form__input {
-  @extend %fields;
+  @extend %form__fields;
+}
+
+.form__file {
+  @extend %form__fields;
+  line-height: 1;
+  padding: .8em 1em;
 }
 
 .form__select {
-  @extend %fields;
+  @extend %form__fields;
 }
 
 .form__textarea {
-  @extend %fields;
-
-  min-height: 6rem;
+  @extend %form__fields;
   line-height: 1.6;
-  padding: .6rem .8rem;
+  min-height: 6em;
+  padding: .8em 1em;
+}
+
+.form__checkbox {
+  position: relative;
+  padding-left: 1.4rem;
+
+  + .form__checkbox {
+    margin-top: .5rem;
+  }
+}
+
+.form__checkbox-label {
+  display: block;
+
+  color: lighten($black, 40%);
+  font-family: $family-one;
+  font-size: 1em;
+
+  cursor: pointer;
+}
+
+.form__checkbox-input {
+  position: absolute;
+  top: .2em;
+  left: 0;
+
+  cursor: pointer;
 }
 
 .form__submit {
-  text-align: center;
+  text-align: right;
 }
 
 @include media($screen-md) {
-  .form__row {
-    @include row;
-
-    .form__field {
-      @include span-columns(6);
-    }
-  }
-
   .form__field {
-    margin-bottom: 2rem;
-  }
-
-  .form__label {
     font-size: 1em;
   }
 
-  %fields {
-    font-size: 1em;
+  %form__fields {
+    border-radius: 4px;
   }
 
   .form__textarea {
-    min-height: 10rem;
-  }
-
-  .form__submit {
-    text-align: right;
-  }
-
-  .form__submit--center {
-    text-align: center;
+    min-height: 10em;
   }
 }

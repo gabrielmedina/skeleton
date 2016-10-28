@@ -13,7 +13,6 @@
 
 .footer__link {
   color: $primary;
-  font-size: 1em;
   text-decoration: none;
 }
 
@@ -23,7 +22,7 @@
 
 .footer__author {
   font-size: 1em;
-  margin-top: .5rem;
+  margin-top: .5em;
 }
 
 @include media($screen-md) {

@@ -6,12 +6,12 @@
 }
 
 .logo__link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 
 .logo__image {
-
+  display: block;
 }
 
 @include media($screen-md) {
@@ -20,6 +20,6 @@
   }
 
   .logo__image {
-
+    height: 4rem;
   }
 }

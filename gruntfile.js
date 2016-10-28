@@ -31,11 +31,7 @@ module.exports = function(grunt) {
           loadPath: require('node-neat').includePaths
         },
         files: {
-          'public/css/application.css':
-          [
-            'bower/owlcar/owl-carousel/owl.carousel.css',
-            'assets/stylesheets/application.scss'
-          ]
+          'public/css/application.css': 'assets/stylesheets/application.scss'
         }
       }
     }, // sass

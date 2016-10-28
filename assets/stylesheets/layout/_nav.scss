@@ -70,7 +70,7 @@
     color: $primary;
     font-size: .85em;
 
-    padding: 1.4rem 4rem;
+    padding: 1.4em 4em;
   }
 
   .nav--opened {
@@ -111,12 +111,12 @@
     z-index: 300;
 
     display: block;
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
 
     color: $primary;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
     text-decoration: none;
 
@@ -127,7 +127,6 @@
 @include media($screen-md) {
   .nav {
     text-align: right;
-    padding: .5rem 0;
 
     .link--current {
       opacity: .7;
@@ -140,15 +139,16 @@
 
   .nav__item {
     display: inline-block;
-    margin-left: .2rem;
+    margin-left: .2em;
   }
 
   .nav__link {
+    line-height: 4rem;
+    padding: 0 1em;
+
     color: $primary;
     font-size: .85em;
     font-weight: 400;
-
-    padding: .8rem 1rem;
 
     @include transition(border .1s ease);
 

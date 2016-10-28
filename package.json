@@ -1,6 +1,6 @@
 {
-  "name": "boilerplate",
-  "version": "0.0.1",
+  "name": "skeleton",
+  "version": "1.0.0",
   "author": "gmedina.santos@gmail.com",
   "license": "MIT",
   "devDependencies": {
