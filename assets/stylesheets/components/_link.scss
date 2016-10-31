@@ -13,6 +13,10 @@
     color: $primary;
     background: none;
   }
+
+  + .link {
+    margin-left: 1.4em;
+  }
 }
 
 .link--tiny {

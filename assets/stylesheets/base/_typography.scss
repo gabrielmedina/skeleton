@@ -37,49 +37,12 @@ small {
 
 .text--left {
   text-align: left;
-
-  .btn,
-  .btn__icon {
-    margin-right: .5em;
-  }
 }
 
 .text--right {
   text-align: right;
-
-  .btn,
-  .btn__icon {
-    margin-left: .5em;
-  }
 }
 
 .text--center {
   text-align: center;
-
-  .btn,
-  .btn__icon {
-    margin-left: .25em;
-    margin-right: .25em;
-  }
-}
-
-@include media($screen-md) {
-  .text--left {
-    .link {
-      margin-right: 1em;
-    }
-  }
-
-  .text--right {
-    .link {
-      margin-left: 1em;
-    }
-  }
-
-  .text--center {
-    .link {
-      margin-left: .5em;
-      margin-right: .5em;
-    }
-  }
 }

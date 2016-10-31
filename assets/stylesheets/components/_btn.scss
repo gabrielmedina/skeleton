@@ -24,7 +24,13 @@
   &:hover,
   &:focus {
     color: $white;
+    text-decoration: none;
+
     background: $primary;
+  }
+
+  + .btn {
+    margin-left: .5em;
   }
 }
 
