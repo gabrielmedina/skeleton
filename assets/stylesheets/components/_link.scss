@@ -1,59 +1,87 @@
 // link
 
 .link {
-  @extend .btn;
-
-  color: rgba($black, .6);
-  background: none;
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
   border: 0;
-  border-radius: none;
+
+  color: rgba($black, .5);
+  font-family: $family-one;
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  outline: none;
+
+  @include transition(color .1s ease);
 
   &:hover,
   &:focus {
     color: $primary;
-    background: none;
+    text-decoration: none;
   }
 
-  + .link {
-    margin-left: 1.4em;
+  + .btn,
+  + .link,
+  + .icon__btn {
+    margin-left: 1rem;
   }
 }
 
 .link--tiny {
-  @extend .btn--tiny;
+  height: 1.5rem;
+  line-height: 1.5rem;
+
+  font-size: .6em;
 }
 
 .link--small {
-  @extend .btn--small;
+  height: 2rem;
+  line-height: 2rem;
+
+  font-size: .7em;
 }
 
 .link--large {
-  @extend .btn--large;
+  font-size: 1em;
+  height: 3rem;
+  line-height: 3rem;
 }
 
 .link--primary {
   color: $primary;
-
-  &:hover,
-  &:focus {
-    color: darken($primary, 10%);
-  }
-}
-
-.link--block {
-  @extend .btn--block;
 }
 
 @include media($screen-md) {
   .link {
+    height: 3rem;
+    line-height: 3rem;
     padding: 0;
+
+    font-size: 1em;
   }
 
-  .link--left {
-    margin-right: 2em;
+  .link--tiny {
+    height: 2rem;
+    line-height: 2rem;
+
+    font-size: .8em;
   }
 
-  .link--right {
-    margin-left: 2em;
+  .link--small {
+    height: 2.5rem;
+    line-height: 2.5rem;
+
+    font-size: .9em;
+  }
+
+  .link--large {
+    height: 4rem;
+    line-height: 4rem;
+
+    font-size: 1.25em;
   }
 }

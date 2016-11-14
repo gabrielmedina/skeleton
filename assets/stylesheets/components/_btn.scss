@@ -1,36 +1,39 @@
 // btn
 
 .btn {
-  box-sizing: border-box;
   display: inline-block;
   height: 2.5rem;
   line-height: 2.5rem;
-  padding: 0 1.4em;
-  background: none;
-  border: solid 1px $primary;
+  padding: 0 1.4rem;
+  border: 0;
+  border-radius: 4px;
+  background: rgba($black, .08);
 
-  color: $primary;
+  color: rgba($black, .5);
   font-family: $family-one;
   font-size: .8em;
-  font-weight: 400;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
-  @include transition(.15s ease);
-
   cursor: pointer;
   outline: none;
+  @include transition(.1s ease);
 
   &:hover,
   &:focus {
     color: $white;
     text-decoration: none;
-
     background: $primary;
   }
 
-  + .btn {
-    margin-left: .5em;
+  + .btn,
+  + .icon__btn {
+    margin-left: .5rem;
+  }
+
+  + .link {
+    margin-left: 1rem;
   }
 }
 
@@ -38,70 +41,31 @@
   height: 1.5rem;
   line-height: 1.5rem;
 
-  font-size: .7em;
+  font-size: .6em;
 }
 
 .btn--small {
   height: 2rem;
   line-height: 2rem;
 
-  font-size: .8em;
+  font-size: .7em;
 }
 
 .btn--large {
   height: 3rem;
   line-height: 3rem;
 
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-.btn--block {
-  margin: 0;
-
-  display: block;
-  width: 100%;
-
-  + .btn--block {
-    margin-top: .5rem;
-  }
-}
-
-.btn--secondary {
+.btn--primary {
   color: $white;
-  border-color: $white;
+  background: $primary;
 
+  &:focus,
   &:hover {
-    color: rgba($black, .7);
-    background: $white;
+    background: darken($primary, 10%);
   }
-}
-
-.btn__icon {
-  @extend .btn;
-  width: 2.5rem;
-  padding: 0;
-  border-radius: 100%;
-
-  text-align: center;
-}
-
-.btn__icon--tiny {
-  @extend .btn--tiny;
-  width: 1.5rem;
-}
-
-.btn__icon--small {
-  @extend .btn--small;
-  width: 2rem;
-}
-
-.btn__icon--large {
-  @extend .btn--large;
-  width: 3rem;
-}
-
-.btn__icon--no-radius {
-  border-radius: 0;
 }
 
 @include media($screen-md) {
@@ -129,23 +93,8 @@
   .btn--large {
     height: 4rem;
     line-height: 4rem;
+    padding: 0 2rem;
 
-    font-size: 1.2em;
-  }
-
-  .btn__icon {
-    width: 3rem;
-  }
-
-  .btn__icon--tiny {
-    width: 2rem;
-  }
-
-  .btn__icon--small {
-    width: 2.5rem;
-  }
-
-  .btn__icon--large {
-    width: 4rem;
+    font-size: 1.25em;
   }
 }
