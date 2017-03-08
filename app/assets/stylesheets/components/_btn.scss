@@ -1,0 +1,100 @@
+// btn
+
+.btn {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1.4rem;
+  border: 0;
+  border-radius: 4px;
+  background: rgba($black, .08);
+
+  color: rgba($black, .5);
+  font-family: $family-one;
+  font-size: .8em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  outline: none;
+  transition: .1s ease;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+    background: $primary;
+  }
+
+  + .btn,
+  + .icon__btn {
+    margin-left: .5rem;
+  }
+
+  + .link {
+    margin-left: 1rem;
+  }
+}
+
+.btn--tiny {
+  height: 1.5rem;
+  line-height: 1.5rem;
+
+  font-size: .6em;
+}
+
+.btn--small {
+  height: 2rem;
+  line-height: 2rem;
+
+  font-size: .7em;
+}
+
+.btn--large {
+  height: 3rem;
+  line-height: 3rem;
+
+  font-size: 1em;
+}
+
+.btn--primary {
+  color: $white;
+  background: $primary;
+
+  &:focus,
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
+
+@include screen-md {
+  .btn {
+    height: 3rem;
+    line-height: 3rem;
+
+    font-size: 1em;
+  }
+
+  .btn--tiny {
+    height: 2rem;
+    line-height: 2rem;
+
+    font-size: .8em;
+  }
+
+  .btn--small {
+    height: 2.5rem;
+    line-height: 2.5rem;
+
+    font-size: .9em;
+  }
+
+  .btn--large {
+    height: 4rem;
+    line-height: 4rem;
+    padding: 0 2rem;
+
+    font-size: 1.25em;
+  }
+}

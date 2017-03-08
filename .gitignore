@@ -1,3 +1,6 @@
 node_modules/*
+app/assets/vendor/*
 .sass-cache/*
 assets/bower/*
+dist/*
+.DS_Store*

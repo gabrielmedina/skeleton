@@ -1,0 +1,184 @@
+// form
+
+.form {
+
+}
+
+.form__fieldset {
+  padding: 1rem 0 0;
+  border: 0;
+  border-top: solid 1px rgba($black, .1);
+}
+
+.form__legend {
+  color: rgba($black, .6);
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.form__field {
+  font-size: .9em;
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  display: block;
+
+  color: lighten($black, 40%);
+  font-family: $family-one;
+  font-size: .8em;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin-bottom: .8em;
+}
+
+%form__fields {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 .8em;
+  border-radius: 4px;
+  border: solid 1px rgba($black, .4);
+  background: $white;
+
+  color: lighten($black, 30%);
+  font-family: $family-two;
+  font-size: 1em;
+
+  outline: none;
+
+  &:focus {
+    border: solid 1px rgba($black, .8);
+  }
+}
+
+.form__input {
+  @extend %form__fields;
+}
+
+.form__select {
+  @extend %form__fields;
+  appearance: none;
+}
+
+.form__input--tiny,
+.form__select--tiny {
+  height: 1.5rem;
+  line-height: 1.5rem;
+
+  font-size: .6em;
+}
+
+.form__input--small,
+.form__select--small {
+  height: 2rem;
+  line-height: 2rem;
+
+  font-size: .7em;
+}
+
+.form__input--large,
+.form__select--large {
+  height: 3rem;
+  line-height: 3rem;
+
+  font-size: 1em;
+}
+
+.form__textarea {
+  @extend %form__fields;
+  min-height: 6em;
+  line-height: 1.6;
+  padding: .8em;
+}
+
+.form__textarea--tiny {
+  font-size: .6em;
+}
+
+.form__textarea--small {
+  font-size: .7em;
+}
+
+.form__textarea--large {
+  font-size: 1em;
+}
+
+.form__input--inverse,
+.form__select--inverse,
+.form__textarea--inverse {
+  color: $white;
+  background: none;
+  border-color: rgba($white, .8);
+
+  &:focus {
+    border-color: $white;
+  }
+}
+
+.form__submit {
+  text-align: right;
+}
+
+@include screen-md {
+  .form__field {
+    font-size: 1em;
+  }
+
+  %form__fields {
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 4px;
+  }
+
+  .form__input,
+  .form__select {
+    height: 3rem;
+    line-height: 3rem;
+
+    font-size: 1em;
+  }
+
+  .form__input--tiny,
+  .form__select--tiny {
+    height: 2rem;
+    line-height: 2rem;
+
+    font-size: .8em;
+  }
+
+  .form__input--small,
+  .form__select--small {
+    height: 2.5rem;
+    line-height: 2.5rem;
+
+    font-size: .9em;
+  }
+
+  .form__input--large,
+  .form__select--large {
+    height: 4rem;
+    line-height: 4rem;
+
+    font-size: 1.25em;
+  }
+
+  .form__textarea {
+    min-height: 10em;
+    line-height: 1.6;
+  }
+
+  .form__textarea--tiny {
+    font-size: .8em;
+  }
+
+  .form__textarea--small {
+    font-size: .9em;
+  }
+
+  .form__textarea--large {
+    font-size: 1.25em;
+  }
+}

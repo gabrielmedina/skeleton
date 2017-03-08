@@ -1,0 +1,160 @@
+// grid
+
+$container-sm: 720px;
+$container-md: 960px;
+$container-lg: 1190px;
+
+.container {
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.container--full-width {
+  max-width: 100% !important;
+}
+
+.container--full-height {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.row,
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.justify--start {
+  justify-content: flex-start;
+}
+
+.justify--end {
+  justify-content: flex-end;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+.justify--around {
+  justify-content: space-around;
+}
+
+.align--start {
+  align-self: flex-start;
+}
+
+.align--end {
+  align-self: flex-end;
+}
+
+.align--center {
+  align-self: center;
+}
+
+.align--baseline {
+  align-self: baseline;
+}
+
+.align--stretch {
+  align-self: stretch;
+}
+
+@include screen-sm {
+  .container {
+    max-width: $container-sm;
+  }
+}
+
+@include screen-md {
+  .container {
+    max-width: $container-md;
+    padding: 0;
+
+    .row,
+    .column {
+      margin: 0 -1rem;
+    }
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  %col {
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
+  .one {
+    @extend %col;
+    width: 8.3333%;
+  }
+
+  .two {
+    @extend %col;
+    width: 16.6666%;
+  }
+
+  .three {
+    @extend %col;
+    width: 24.9999%;
+  }
+
+  .four {
+    @extend %col;
+    width: 33.3332%;
+  }
+
+  .five {
+    @extend %col;
+    width: 41.6665%;
+  }
+
+  .six {
+    @extend %col;
+    width: 50%;
+  }
+
+  .seven {
+    @extend %col;
+    width: 58.3331%;
+  }
+
+  .eight {
+    @extend %col;
+    width: 66.6664%;
+  }
+
+  .nine {
+    @extend %col;
+    width: 74.9997%;
+  }
+
+  .ten {
+    @extend %col;
+    width: 83.333%;
+  }
+
+  .eleven {
+    @extend %col;
+    width: 91.6663%;
+  }
+
+  .twelve {
+    @extend %col;
+    width: 100%;
+  }
+}
+
+@include screen-lg {
+  .container {
+    max-width: $container-lg;
+  }
+}

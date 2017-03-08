@@ -5,7 +5,7 @@
 ## How to use
 
 ### Required
-- Node.js (Grunt and Bower)
+- Node.js (Gulp and Bower)
 - Ruby (Sass)
 
 Dependencies of NPM
@@ -20,10 +20,10 @@ Dependencies of Bower
 bower install
 ```
 
-Run Grunt
+Run Gulp
 
 ```shell
-grunt w
+gulp
 ```
 
 :ship:
@@ -32,9 +32,6 @@ grunt w
 # Libraries
 
 - [jQuery](https://jquery.com/)
-- [Owl Carousel](http://owlgraphic.com/owlcarousel/)
-- [Bourbon](http://bourbon.io/)
-- [Neat](http://neat.bourbon.io/)
 - [Ionicons](http://ionicons.com/)
 
 

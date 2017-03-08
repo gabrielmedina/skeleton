@@ -1,0 +1,121 @@
+// page
+
+.page {
+  padding: 2rem 0;
+}
+
+.page__header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.page__title {
+  margin: 0;
+
+  color: rgba($black, .9);
+  font-size: 1.2em;
+}
+
+.page__caption {
+  color: rgba($black, .6);
+  font-size: .9em;
+  font-weight: 600;
+}
+
+.page__text {
+  line-height: 1.6;
+
+  color: rgba($black, .8);
+  font-size: .8em;
+}
+
+.page__gallery {
+  margin: 0 0 1rem;
+}
+
+.page__figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page__figcaption {
+  margin-top: .5rem;
+
+  color: rgba($black, .7);
+  font-size: .9em;
+
+  padding: .5rem .8rem;
+  background: rgba($black, .05);
+}
+
+.page__image {
+  display: block;
+  width: 100%;
+}
+
+.page__footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.page__nav {
+  margin-bottom: 1rem;
+}
+
+.page__social {
+
+}
+
+@include screen-md {
+  .page {
+
+  }
+
+  .page__header {
+    text-align: left;
+  }
+
+  .page__title {
+    font-size: 1.6em;
+  }
+
+  .page__caption {
+    font-size: 1.1em;
+  }
+
+  .page__text {
+    font-size: 1em;
+  }
+
+  .page__gallery {
+    margin: 0 0 2rem;
+  }
+
+  .page__gallery--left {
+    float: left;
+    margin: .3rem 2rem 2rem 0;
+
+    width: 50%;
+  }
+
+  .page__gallery--right {
+    float: right;
+    margin: .3rem 0 2rem 2rem;
+
+    width: 50%;
+  }
+
+  .page__footer {
+
+  }
+
+  .page__nav {
+    margin: 0;
+    float: left;
+  }
+
+  .page__social {
+    float: right;
+  }
+}

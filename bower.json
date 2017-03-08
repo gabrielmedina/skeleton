@@ -1,14 +1,12 @@
 {
   "name": "skeleton",
-  "version": "1.0.0",
-  "homepage": "https://github.com/gabrielmedina/skeleton",
+  "description": "",
+  "main": "gulpfile.js",
   "authors": [
     "gabrielmedina <gmedina.santos@gmail.com>"
   ],
-  "moduleType": [
-    "node"
-  ],
   "license": "MIT",
+  "homepage": "https://github.com/gabrielmedina/gulp-skeleton",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,9 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.11.1",
-    "livereload-js": "~2.2.1",
-    "modernizr": "~2.8.3",
-    "owlcar": "~1.3.2"
+    "jquery": "^3.1.1"
   }
 }
