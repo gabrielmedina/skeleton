@@ -6,7 +6,7 @@
   padding: 1rem 0;
 
   color: lighten($black, 40%);
-  font-size: .8em;
+  font-size: .75em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -22,7 +22,7 @@
 
 .footer__author {
   font-size: 1em;
-  margin-top: .5em;
+  margin-top: .5rem;
 }
 
 @include screen-md {
@@ -31,11 +31,10 @@
   }
 
   .footer__small {
-    float: left;
+
   }
 
   .footer__author {
-    float: right;
-    margin-top: 0;
+
   }
 }

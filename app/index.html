@@ -18,21 +18,23 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo header__logo">
-        <a class="logo__link" href="/">
-          <img class="logo__image" src="public/img/logo.png" alt="Skeleton">
-        </a>
+      <div class="row">
+        <div class="logo four">
+          <a class="logo__link" href="/">
+            <img class="logo__image" src="public/img/logo.png" alt="Skeleton">
+          </a>
+        </div>
+
+        <a class="nav__btn ion-navicon" href="#"></a>
+
+        <nav class="nav eight">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="https://github.com/gabrielmedina/skeleton">Fork</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <a class="nav__btn ion-navicon" href="#"></a>
-
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="https://github.com/gabrielmedina/skeleton">Fork</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
 
@@ -43,12 +45,6 @@
           <h1 class="section__title">Skeleton for new projects</h1>
         </header>
 
-        <form action="">
-          <div class="form__field">
-            <label class="form__label" for=""></label>
-          </div>
-        </form>
-
         <div class="section__text">
           <p>Inspired in <a href="https://github.com/luizpicolo/skeleton-project-rails">Skeleton Project Rails</a></p>
         </div>
@@ -58,12 +54,14 @@
 
   <footer class="footer">
     <div class="container">
-      <small class="footer__small">
-        &copy; 2016 - Todos os direitos reservados.
-      </small>
+      <div class="row">
+        <small class="footer__small six">
+          &copy; 2016 - Todos os direitos reservados.
+        </small>
 
-      <div class="footer__author">
-        Desenvolvido por: <a class="footer__link" href="https://github.com/gabrielmedina">Gabriel Medina</a>
+        <div class="footer__author six text--right">
+          Desenvolvido por: <a class="footer__link" href="https://github.com/gabrielmedina">Gabriel Medina</a>
+        </div>
       </div>
     </div>
   </footer>

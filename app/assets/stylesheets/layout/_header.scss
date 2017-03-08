@@ -2,7 +2,7 @@
 
 .header {
   width: 100%;
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .header__logo {
@@ -15,18 +15,14 @@
 
 @include screen-md {
   .header {
-    padding: 1em 0;
-
-    .container {
-      position: relative;
-    }
+    padding: 1rem 0;
   }
 
   .header__logo {
-    float: left;
+
   }
 
   .header__nav {
-    float: right;
+
   }
 }
